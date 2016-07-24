@@ -15,6 +15,8 @@
 		94D8F2641D41E7AF005D3D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D8F2621D41E7AF005D3D85 /* LaunchScreen.storyboard */; };
 		94D8F26F1D41E7AF005D3D85 /* CodeScanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D8F26E1D41E7AF005D3D85 /* CodeScanTests.m */; };
 		94D8F27A1D41E7AF005D3D85 /* CodeScanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D8F2791D41E7AF005D3D85 /* CodeScanUITests.m */; };
+		94D8F2891D42175B005D3D85 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D8F2881D42175B005D3D85 /* ScanView.m */; };
+		94F051A21D4482CE0096A0EC /* 二维码.png in Resources */ = {isa = PBXBuildFile; fileRef = 94F051A11D4482CE0096A0EC /* 二维码.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		94D8F2751D41E7AF005D3D85 /* CodeScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D8F2791D41E7AF005D3D85 /* CodeScanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeScanUITests.m; sourceTree = "<group>"; };
 		94D8F27B1D41E7AF005D3D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D8F2871D42175B005D3D85 /* ScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanView.h; sourceTree = "<group>"; };
+		94D8F2881D42175B005D3D85 /* ScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanView.m; sourceTree = "<group>"; };
+		94F051A11D4482CE0096A0EC /* 二维码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "二维码.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,9 @@
 		94D8F2531D41E7AF005D3D85 /* CodeScan */ = {
 			isa = PBXGroup;
 			children = (
+				94F051A11D4482CE0096A0EC /* 二维码.png */,
+				94D8F2871D42175B005D3D85 /* ScanView.h */,
+				94D8F2881D42175B005D3D85 /* ScanView.m */,
 				94D8F2571D41E7AF005D3D85 /* AppDelegate.h */,
 				94D8F2581D41E7AF005D3D85 /* AppDelegate.m */,
 				94D8F25A1D41E7AF005D3D85 /* ViewController.h */,
@@ -246,6 +254,7 @@
 				94D8F2641D41E7AF005D3D85 /* LaunchScreen.storyboard in Resources */,
 				94D8F2611D41E7AF005D3D85 /* Assets.xcassets in Resources */,
 				94D8F25F1D41E7AF005D3D85 /* Main.storyboard in Resources */,
+				94F051A21D4482CE0096A0EC /* 二维码.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D8F25C1D41E7AF005D3D85 /* ViewController.m in Sources */,
+				94D8F2891D42175B005D3D85 /* ScanView.m in Sources */,
 				94D8F2591D41E7AF005D3D85 /* AppDelegate.m in Sources */,
 				94D8F2561D41E7AF005D3D85 /* main.m in Sources */,
 			);
@@ -414,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodeScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.windtersharp.CodeScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodeScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.windtersharp.CodeScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +508,7 @@
 				94D8F2801D41E7AF005D3D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94D8F2811D41E7AF005D3D85 /* Build configuration list for PBXNativeTarget "CodeScanTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				94D8F2831D41E7AF005D3D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94D8F2841D41E7AF005D3D85 /* Build configuration list for PBXNativeTarget "CodeScanUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				94D8F2861D41E7AF005D3D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
